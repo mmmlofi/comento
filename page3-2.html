@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/calculatorstyle.css" />
+    <script src="assets/scrpit/calculatorscript.js"></script>
+    <title>3주차과제</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar"> 
+            <div class="logo">
+                <a href="index.html"><img src="/assets/image/frog.png"></a>
+            </div>
+            <div >
+                <ul class="menu">
+                    <li><a href="page1.html">1주차</a></li>
+                    <li><a href="page2.html">2주차</a></li>
+                    <li class="dropdown">
+                        <a href="page3-1.html">3주차</a>
+                        <ul class="dropdown-content">
+                            <li><a href="page3-1.html">과제 1</a></li>
+                            <li><a href="page3-2.html">과제 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="icon">
+                <a href="https://velog.io/@mmmlofi"><img src="assets/image/velog.png"></a>
+                <a href="https://github.com/mmmlofi/comento"><img src="assets/image/github.png"></a>
+                <a href="https://instagram.com/mmmj1hye?igshid=NGVhN2U2NjQ0Yg=="><img src="assets/image/instagram-logo.png"></a>
+            </div>
+  
+        </nav>
+      </header>  
+      <main>  
+        <article>
+            <section>
+             <h2>안녕하세요! 멘토,멘티 여러분!</h2>
+             <h3>[한국교통대학교] 프론트엔드 현직자와 함께하는 개발 직무 A to Z
+             <br> 3주차 과제 제출 합니다:></h3>
+            </section>
+            <section>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="grid-container">
+            <div class="grid-item" onclick="addToDisplay('7')">7</div>
+            <div class="grid-item" onclick="addToDisplay('8')">8</div>
+            <div class="grid-item" onclick="addToDisplay('9')">9</div>
+            <div class="grid-item" onclick="addToDisplay('/')">/</div>
+            <div class="grid-item" onclick="addToDisplay('4')">4</div>
+            <div class="grid-item" onclick="addToDisplay('5')">5</div>
+            <div class="grid-item" onclick="addToDisplay('6')">6</div>
+            <div class="grid-item" onclick="addToDisplay('*')">*</div>
+            <div class="grid-item" onclick="addToDisplay('1')">1</div>
+            <div class="grid-item" onclick="addToDisplay('2')">2</div>
+            <div class="grid-item" onclick="addToDisplay('3')">3</div>
+            <div class="grid-item" onclick="addToDisplay('-')">-</div>
+            <div class="grid-item" onclick="addToDisplay('0')">0</div>
+            <div class="grid-item" onclick="addToDisplay('.')">.</div>
+            <div class="grid-item" onclick="clearDisplay()">C</div>
+            <div class="grid-item" onclick="calculateResult()">=</div>
+            <div class="grid-item" onclick="addToDisplay('+')">+</div>
+        </div>
+    </div>
+                
+            </section>
+     </article>
+    </main>
+</body>
+</html>

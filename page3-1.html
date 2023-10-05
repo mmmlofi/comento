@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>2주차과제</title>
+    <link rel="stylesheet" href="assets/css/clockstyle.css">
+    <script src="assets/scrpit/clockscript.js"></script>
+    <title>3주차과제</title>
 </head>
 <body>
     <header>
@@ -15,19 +17,20 @@
             <div class="logo">
                 <a href="index.html"><img src="/assets/image/frog.png"></a>
             </div>
-            <div>
+            <div >
                 <ul class="menu">
                     <li><a href="page1.html">1주차</a></li>
                     <li><a href="page2.html">2주차</a></li>
                     <li class="dropdown">
                         <a href="page3-1.html">3주차</a>
                         <ul class="dropdown-content">
-                            <li><a href="page3-1.html">과제1</a></li>
-                            <li><a href="page3-2.html">과제2</a></li>
+                            <li><a href="page3-1.html">과제 1</a></li>
+                            <li><a href="page3-2.html">과제 2</a></li>
                         </ul>
                     </li>
                 </ul>
-            </div> 
+            </div>
+            
             <div class="icon">
                 <a href="https://velog.io/@mmmlofi"><img src="assets/image/velog.png"></a>
                 <a href="https://github.com/mmmlofi/comento"><img src="assets/image/github.png"></a>
@@ -41,50 +44,34 @@
             <section>
              <h2>안녕하세요! 멘토,멘티 여러분!</h2>
              <h3>[한국교통대학교] 프론트엔드 현직자와 함께하는 개발 직무 A to Z
-             <br> 2주차 과제 제출 합니다:></h3>
+             <br> 3주차 과제 제출 합니다:></h3>
+            </section>
+            <section>
+                <div class="clock-container">
+                    <div id="digital-clock">
+                        <div id="hour">00 : </div>
+                        <div>:</div>
+                        <div id="minute">00</div>
+                        <div>:</div>
+                        <div id="second">00</div>
+                    </div>
+                    <div id="battery-status">
+                        배터리: <span id="battery-level">100</span>%
+                    </div>
+                    <div id="alarm-input">
+                        <input type="number" id="alarm-hour" placeholder="시" >
+                        <input type="number" id="alarm-minute" placeholder="분" >
+                        <input type="number" id="alarm-second" placeholder="초" >  
+                    </div>
+                    <button id="add-alarm">알람 추가</button>
+                    <button id="stop-alarm">알람 끄기</button>
+                </div>
+                <div id="alarm-container">
+                    <h2>알람 현황</h2>
+                    <ul id="alarm-list"></ul>
+                </div>
             </section>
      </article>
-     <section> <table border="1">
-        <tr>
-            <td colspan="4">
-                <input type="text" id="display">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="4">
-                <input type="text" id="result">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3">AC</td>
-            <td>/</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>*</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>+</td>
-        </tr>
-        <tr>
-            <td colspan="2">0</td>
-            <td>.</td>
-            <td>=</td>
-        </tr>
-    </table>
-</section>
-       
     </main>
 </body>
 </html>

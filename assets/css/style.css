@@ -10,9 +10,11 @@ main {
 
 body {
   padding-top: 50px;
-  background: #EEE;
-  height:auto;
-  padding-bottom: 3rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 html {
@@ -35,71 +37,109 @@ header {
     justify-content: space-between;
   }
   
-  .menu ul{
-    display: none;
-  }
-  .menu li:hover ul{
-    display:block;
-  }
+  /* 드롭다운메뉴 */
+.menu ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  top: 100%; 
+}
 
-  .logo{
-    padding-left: 20px;
-    padding-top: 10px;
-  }
-  .logo img{
-    width: 40px;
-    height: 40px;
-  }
-  .menu li {
-    margin-left: 15px;
-    display: inline-block;
-    text-align: center;
-  }
-  .menu a {
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
-    display: block;
-  }
-  .menu a:hover {
-  	color: #EEE;
-  }
+.menu li {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px; 
+  margin-left: 15px;
+  text-align: center;
+  width: 100px; /* 메뉴 너비 지정 */
+  text-align: center; 
+  line-height: 40px; 
+  transition: background-color 0.3s; /* 배경 색상 전환 효과 추가 */
+}
+
+.menu li:hover {
+  background-color: rgba(30, 138, 112, 0.7); /* 호버 시 배경 색상 변경 */
+}
+.menu li a:hover {
+  color: #EEE;
+}
+
+.menu a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu li:hover ul {
+  display: block; /* 호버 시 나타나도록 변경 */
+  padding: 0;
   
-  .icon{
-    padding-right: 50px;
-    padding-top: 15px;
-    flex: none;
-  }
-  .icon img{
-    margin-left: 2px;
-    height:28.8px;
-    width:28.8px;
-  }
-  .text{
-    color: rgb(75, 75, 75);
-  }
+}
+.menu .dropdown-content li {
+  padding: 1px;
+  text-align: center;
+  width: 100px;
+  margin: 0; /* li 요소의 바깥 여백 제거 */
+  padding: 0; /* li 요소의 안쪽 여백 제거 */
+}
+
+.menu .dropdown-content a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 5px;
+}
+.menu .dropdown-content a:hover {
+  color: #EEE;
+}
+/*로고*/
+.logo{
+  padding-left: 20px;
+  padding-top: 15px;
+ }
+.logo img{
+ width: 40px;
+  height: 40px;
+}
+.icon{
+padding-right: 50px;
+padding-top: 20px;
+flex: none;
+}
+.icon img{
+margin-left: 2px;
+height:28.8px;
+width:28.8px;
+}
+.text{
+color: rgb(75, 75, 75);
+}
  
-  .text p{
-    margin-left: 20px;
-    display: flex;
-    justify-content: center;
-    color: rgb(68, 68, 68);
-    font-weight:normal;
-    word-spacing :-2px;
-    align-items: center;
-    float:left
-  }
-  img{
-    float:left
-  }
-  .mainimg{
-    width: 30%;
-    height: 30%;
-  }
-  article::after {
-  content: '';
-  display:block;
-  clear:both;
+.text p{
+margin-left: 20px;
+display: flex;
+justify-content: center;
+color: rgb(68, 68, 68);
+font-weight:normal;
+word-spacing :-2px;
+align-items: center;
+float:left
+}
+img{
+float:left
+}
+.mainimg{
+width: 30%;
+height: 30%;
+}
+  
+.after::after {
+content: '';
+display:block;
+clear:both;
 }
 
   

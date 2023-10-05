@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .clock-container {
+    text-align: center;
+    background-color: #f6f6f6; /* 시계 컨테이너 배경색 */
+    border-radius: 10px; /* 테두리 둥글기 조절 */
+    border: 20px solid #d8d8d8; /* 테두리 스타일 및 색상 */
+    padding: 20px; /* 내부 패딩 추가 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 */
+    color: #000000;
+  }
+  #digital-clock div {
+    display: inline-block; /* 또는 display: inline; 으로 설정 */
+    margin: 0 5px;
+}
+  
+  #digital-clock {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  #battery-status {
+    font-size: 18px;
+
+  }
+  #alarm-input {
+    margin-top: 20px;
+  }
+  #alarm-input > input{
+    width: 35px; /* 원하는 너비로 조절하세요 */
+  }
+  #alarm-container{
+    color: #000;
+  }
+  #alarm-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #add-alarm {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #494949;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #stop-alarm {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #494949;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* 화면 깜빡임 애니메이션 */
+  @keyframes blink {
+    0% {
+        background-color : rgb(122, 122, 122);
+    }
+    50% {
+        background-color:  rgba(75, 75, 75, 0.7)
+    }
+    100% {
+        background-color: #313131;
+    }
+  }
+  
+  .clock-container.blink {
+    animation: blink 1s infinite;
+  }
+  
