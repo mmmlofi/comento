@@ -34,7 +34,7 @@ body {
     margin-top: 20px;
   }
   #alarm-input > input{
-    width: 35px; /* 원하는 너비로 조절하세요 */
+    width: 35px; 
   }
   #alarm-container{
     color: #000;

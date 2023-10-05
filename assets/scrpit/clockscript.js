@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div>:</div>
                 <div id="second">${seconds}</div>
             `;
+            clockContainer.classList.remove("blink"); // .blink 클래스 제거
 
         } else {
             clockContainer.style.backgroundColor = "black";
