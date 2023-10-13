@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/clockstyle.css">
-    <script src="assets/scrpit/clockscript.js"></script>
-    <title>3주차과제</title>
+    <link rel="stylesheet" href="assets/css/signup.css" />
+    <script src="assets/scrpit/signupscrpit.js"></script>
+    
+    <title>4주차과제</title>
 </head>
 <body>
     <header>
@@ -52,32 +53,28 @@
             <section>
              <h2>안녕하세요! 멘토,멘티 여러분!</h2>
              <h3>[한국교통대학교] 프론트엔드 현직자와 함께하는 개발 직무 A to Z
-             <br> 3주차 과제 제출 합니다:></h3>
+             <br> 4주차 과제 제출 합니다:></h3>
             </section>
             <section>
-                <div class="clock-container">
-                    <div id="digital-clock">
-                        <div id="hour">00 : </div>
-                        <div>:</div>
-                        <div id="minute">00</div>
-                        <div>:</div>
-                        <div id="second">00</div>
-                    </div>
-                    <div id="battery-status">
-                        배터리: <span id="battery-level">100</span>%
-                    </div>
-                    <div id="alarm-input">
-                        <input type="number" id="alarm-hour" placeholder="시" >
-                        <input type="number" id="alarm-minute" placeholder="분" >
-                        <input type="number" id="alarm-second" placeholder="초" >  
-                    </div>
-                    <button id="add-alarm">알람 추가</button>
-                    <button id="stop-alarm">알람 끄기</button>
-                </div>
-                <div id="alarm-container">
-                    <h2>알람 현황</h2>
-                    <ul id="alarm-list"></ul>
-                </div>
+                <form id="signupForm">
+                    <h1>회원가입</h1>
+            
+                    <label for="username">아이디:</label>
+                    <input type="text" id="username" required>
+                    <span id="usernameError" style="color: red;"></span>
+            
+                    <label for="password">비밀번호:</label>
+                    <input type="password" id="password" required>
+                    <span id="passwordError" style="color: red;"></span>
+            
+                    <label for="confirmPassword">비밀번호 확인:</label>
+                    <input type="password" id="confirmPassword" required>
+                    <span id="confirmPasswordError" style="color: red;"></span>
+            
+                    <button type="button" onclick="signup()">가입하기</button>
+                    <p id="error-message"></p>
+                </form>
+              
             </section>
      </article>
     </main>
